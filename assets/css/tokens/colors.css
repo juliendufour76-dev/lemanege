@@ -1,0 +1,12 @@
+:root{
+--blue-700:#00009E;--blue-600:#0000C8;--blue-500:#0000F5;--blue-200:#B3B3FC;--blue-50:#EDEDFE;
+--magenta-600:#D400AD;--magenta-500:#FF00D0;--magenta-100:#FFD6F6;
+--yellow-500:#FFEB00;--yellow-300:#FFF36B;--orange-500:#FF7A00;--red-500:#FF3B1F;
+--black:#000000;--white:#FFFFFF;--grey-900:#1A1A1A;--grey-700:#555555;--grey-500:#999999;--grey-200:#E6E6E6;--grey-100:#F4F4F4;
+--coul-emphase:var(--blue-500);--coul-emphase2:var(--magenta-500);
+--text-body:var(--black);--text-meta:var(--grey-500);--text-meta-strong:var(--grey-700);--text-emphasis:var(--coul-emphase);--text-on-emphasis:var(--white);--text-on-stage:var(--white);
+--surface-page:var(--white);--surface-stage:var(--black);--surface-emphasis:var(--coul-emphase);--surface-accent:var(--coul-emphase2);--surface-warm:var(--yellow-500);
+--border-rule-color:var(--coul-emphase);--bordure:1px solid var(--coul-emphase);
+--gradient-warm:linear-gradient(135deg,var(--yellow-500) 0%,var(--orange-500) 55%,var(--magenta-500) 100%);
+--focus-ring:var(--magenta-500);
+}
