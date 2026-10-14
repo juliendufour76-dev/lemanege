@@ -26,7 +26,7 @@
   const FILTERS = ['Tous les spectacles', 'Théâtre', 'Théâtre Musique', 'Danse', 'Concert', 'Cirque', 'Marionnettes', 'Performance', 'Festival', 'Expo', 'Grands formats', 'Conférence', 'Opéra', 'Humour', 'Repas spectacle', 'Théâtre d’objets', 'Musique', 'Spectacle avec navette', 'Sélection Jeunesse', 'Rencontres', 'Séances scolaires', 'Spectacles passés'];
   const PER_PAGE = 8;
   const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
-  const st = { filter: FILTERS[0], page: 1, view: 'liste' };
+  const st = { filter: FILTERS[0], page: 1, view: 'grille' };
   const $f = document.getElementById('filters'), $a = document.getElementById('agenda'), $p = document.getElementById('pager');
 
   const thumb = e => `<a class="thumb" href="${e.href}">${e.image ? `<img src="${e.image}" alt="" loading="lazy">` : ''}</a>`;
