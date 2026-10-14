@@ -120,3 +120,112 @@ img{max-width:100%;display:block}
 .site-footer__mark{font-size:var(--fs-h2);font-weight:500;line-height:.95;letter-spacing:-.02em}
 .site-footer__col{display:flex;flex-direction:column;gap:6px}
 .site-footer__legal{padding-top:var(--space-4);padding-bottom:var(--space-4);border-top:1px solid rgba(255,255,255,.6);display:flex;gap:var(--space-5);flex-wrap:wrap;font-size:var(--fs-meta)}
+/* Pages intérieures — gabarit Spectacle du design system */
+.page-head{padding-top:var(--space-6);padding-bottom:var(--space-6)}
+.page-head .h-big{line-height:var(--lh-heading);text-wrap:balance}
+.page-sub{font-size:var(--fs-h3);margin-top:var(--space-2)}
+.page-sub span{color:var(--text-meta)}
+.stage{background:var(--surface-stage)}
+.stage__grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:4px;padding-top:4px;padding-bottom:4px}
+.stage__grid--2{grid-template-columns:2fr 1fr}
+.stage__grid--1{grid-template-columns:1fr}
+.stage__grid img{width:100%;height:520px;object-fit:cover}
+.split{display:grid;grid-template-columns:minmax(240px,1fr) minmax(0,2fr);gap:var(--space-7);padding-top:var(--space-7)}
+.aside{display:flex;flex-direction:column;gap:var(--space-4);align-self:start}
+.info{font-size:var(--fs-small)}
+.info ul{list-style:none;margin:0;padding:var(--space-3) 0;border-top:var(--bordure);display:flex;flex-direction:column;gap:2px}
+.info .strong{color:var(--coul-emphase);font-weight:500}
+.info .meta{color:var(--text-meta);font-size:var(--fs-meta);letter-spacing:var(--ls-meta)}
+.prose{border-top:var(--bordure);padding-top:var(--space-4);min-width:0}
+.prose p{margin:0 0 var(--space-4);max-width:760px;text-wrap:pretty}
+.prose b,.prose strong{font-weight:500}
+.lead{font-size:var(--fs-lead);line-height:1.3;font-weight:500;color:var(--coul-emphase)}
+.prose p.lead{max-width:none}
+.know{border-top:var(--bordure);margin-top:var(--space-5);padding-top:var(--space-4)}
+.know a{font-style:italic}
+.h2{margin:var(--space-8) 0 var(--space-5);padding-bottom:var(--space-3);border-bottom:var(--bordure);font-size:var(--fs-h2);font-weight:500;line-height:var(--lh-heading);letter-spacing:var(--ls-heading);color:var(--coul-emphase)}
+.h3{margin:var(--space-7) 0 var(--space-3);font-size:var(--fs-h3);font-weight:500;line-height:var(--lh-heading);color:var(--coul-emphase)}
+.credits{font-size:var(--fs-small);display:flex;flex-direction:column;gap:4px}
+.credits p{margin:0;max-width:none}
+.credits b{font-weight:500}
+.photo-credit{font-size:var(--fs-meta);color:var(--text-meta);letter-spacing:var(--ls-meta);margin:var(--space-4) 0 0}
+.page-end{padding-bottom:var(--space-8)}
+.page-end>.actions{margin-top:var(--space-6)}
+/* Chapitres éditoriaux (titre 1fr / texte 2fr, filet bleu) */
+.chapter{display:grid;grid-template-columns:minmax(240px,1fr) minmax(0,2fr);gap:var(--space-7);padding:var(--space-7) 0;border-top:var(--bordure)}
+.chapter h2{margin:0;font-size:var(--fs-h2);font-weight:500;line-height:var(--lh-heading);letter-spacing:var(--ls-heading);color:var(--coul-emphase);text-wrap:balance}
+.chapter p{margin:0 0 var(--space-4);max-width:760px;text-wrap:pretty}
+.chapter figure{margin:0 0 var(--space-5);background:var(--surface-stage)}
+.chapter figure img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.quote{margin:var(--space-5) 0;padding-top:var(--space-4);border-top:var(--bordure);font-size:var(--fs-lead);line-height:1.3;font-weight:500;color:var(--coul-emphase);max-width:760px}
+.quote p{margin:0}
+.quote cite{display:block;margin-top:var(--space-2);font-style:normal;font-size:var(--fs-small);font-weight:400;color:var(--text-body)}
+/* Fiche technique */
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:var(--space-6) var(--space-5)}
+.facts h3{margin:0 0 var(--space-3);font-size:var(--fs-h3);font-weight:500;color:var(--coul-emphase)}
+.facts dl{margin:0;font-size:var(--fs-small)}
+.facts dl>div{padding:var(--space-3) 0;border-top:var(--bordure)}
+.facts dt{font-weight:500}
+.facts dd{margin:0;color:var(--text-meta-strong)}
+.facts .note{font-size:var(--fs-meta);color:var(--text-meta);margin:var(--space-3) 0 0}
+.milestone dt{font-size:var(--fs-h2);line-height:var(--lh-heading);letter-spacing:var(--ls-heading);color:var(--coul-emphase)}
+/* Bande festival (dégradé chaud + lettrage expressif) */
+.band{background:var(--gradient-warm)}
+.band__grid{display:grid;grid-template-columns:1.4fr 1fr;gap:var(--space-6);align-items:center;padding-top:var(--space-8);padding-bottom:var(--space-8)}
+.band__art{font-family:var(--font-expressive);font-size:clamp(84px,13vw,190px);line-height:.85;letter-spacing:-.02em;color:var(--coul-emphase)}
+.band__txt{display:flex;flex-direction:column;align-items:flex-start;gap:var(--space-4)}
+.band__txt p{margin:0;font-size:var(--fs-lead);line-height:1.3;font-weight:500}
+.band__visual{background:var(--surface-stage);aspect-ratio:1181/620;overflow:hidden}
+.band__visual img{width:100%;height:100%;object-fit:cover}
+.band--home .band__art{font-size:clamp(84px,11vw,160px)}
+.flash--yellow{background:var(--yellow-500);color:var(--black)}
+.flash--blue{background:var(--coul-emphase);color:var(--white)}
+/* Encadré (fond bleu, CTA) */
+.callout{background:var(--coul-emphase);color:var(--white);padding:var(--space-6);display:flex;flex-direction:column;gap:var(--space-4);align-items:flex-start}
+.callout p{margin:0;font-size:var(--fs-lead);line-height:1.3;font-weight:500}
+.callout a:not(.btn){color:var(--white);text-decoration:underline}
+.callout a:not(.btn):hover{color:var(--yellow-500)}
+/* Tarifs */
+.prices{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:var(--space-6) var(--space-5)}
+.price{border-top:var(--bordure);padding-top:var(--space-4);display:flex;flex-direction:column;gap:var(--space-3)}
+.price h3{margin:0;font-size:var(--fs-h3);font-weight:500;line-height:var(--lh-heading);color:var(--coul-emphase)}
+.price p{margin:0;text-wrap:pretty}
+.price .big{font-size:var(--fs-h1);font-weight:500;line-height:1;letter-spacing:var(--ls-heading);color:var(--coul-emphase)}
+.price .big small{font-size:var(--fs-small);letter-spacing:0;color:var(--text-body);font-weight:400}
+.price .hint{font-size:var(--fs-small);color:var(--text-meta-strong)}
+.price .flash{margin-bottom:var(--space-1)}
+.rates{width:100%;border-collapse:collapse;font-size:var(--fs-small)}
+.rates th{text-align:left;font-weight:400;font-size:var(--fs-meta);letter-spacing:var(--ls-meta);color:var(--text-meta);padding:0 0 var(--space-2)}
+.rates td{padding:var(--space-2) 0;border-top:var(--bordure)}
+.rates td:last-child{font-weight:500;color:var(--coul-emphase)}
+.rates s{color:var(--text-meta)}
+.qa{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:var(--space-5)}
+.qa>div{border-top:var(--bordure);padding-top:var(--space-4)}
+.qa h3{margin:0 0 var(--space-2);font-size:var(--fs-lead);font-weight:500;line-height:1.3}
+.qa p{margin:0 0 var(--space-3)}
+.contacts{list-style:none;margin:0;padding:0}
+.contacts li{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:var(--space-5);padding:var(--space-4) 0;border-top:var(--bordure)}
+.contacts li:last-child{border-bottom:var(--bordure)}
+.contacts b{font-weight:500;display:block}
+/* Dates de tournée */
+.tour details{border-top:var(--bordure)}
+.tour details:last-child{border-bottom:var(--bordure)}
+.tour summary{cursor:pointer;list-style:none;display:flex;align-items:baseline;gap:var(--space-4);padding:var(--space-4) 0;font-size:var(--fs-h3);font-weight:500;color:var(--coul-emphase)}
+.tour summary::-webkit-details-marker{display:none}
+.tour summary::after{content:"+";margin-left:var(--space-2)}
+.tour details[open] summary::after{content:"×"}
+.tour summary span{font-size:var(--fs-meta);font-weight:400;color:var(--text-meta);margin-left:auto}
+.tour ul{list-style:none;margin:0 0 var(--space-5);padding:0;font-size:var(--fs-small)}
+.tour li{display:grid;grid-template-columns:minmax(150px,1fr) minmax(0,2fr);gap:var(--space-5);padding:var(--space-2) 0;border-top:1px solid var(--grey-200)}
+.tour li b{font-weight:500}
+.tour li.is-home b{color:var(--coul-emphase)}
+@media (max-width:900px){
+.stage__grid,.stage__grid--2{grid-template-columns:1fr}
+.stage__grid img{height:260px}
+.stage__grid img+img{display:none}
+.split,.chapter,.band__grid{grid-template-columns:1fr}
+.split,.chapter{gap:var(--space-5)}
+}
+@media (max-width:600px){.tour li,.contacts li{grid-template-columns:1fr;gap:2px}.callout{padding:var(--space-5)}.h2{margin-top:var(--space-7)}}
+.price .flash{order:3;align-self:flex-start;margin:var(--space-1) 0 0}
+.cards>.callout{align-self:start}
